@@ -30,7 +30,7 @@ No external services are required — the whole thing runs locally with `mvn spr
 ## 2. Project structure
 
 ```
-wordguess-game/
+Guess-the-word/
 ├── pom.xml
 ├── README.md
 ├── .gitignore
