@@ -67,7 +67,7 @@ wordguess-game/
 ### Run it
 
 ```bash
-git clone <your-repo-url>
+git clone https://github.com/nmit-1nt23cs083/Guess-the-word
 cd wordguess-game
 mvn spring-boot:run
 ```
@@ -162,17 +162,6 @@ git branch -M main
 git remote add origin <your-empty-github-repo-url>
 git push -u origin main
 ```
-
-From there, use feature branches and pull requests for further changes, e.g.:
-
-```bash
-git checkout -b feature/admin-report-ui
-# ...make changes...
-git commit -am "Add richer admin report UI"
-git push -u origin feature/admin-report-ui
-```
-
----
 
 ## 7. Notes / possible extensions
 
