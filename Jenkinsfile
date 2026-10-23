@@ -16,6 +16,11 @@ pipeline {
                 sh 'mvn clean install'
             }
         }
+        stage('Deploy') {
+    steps {
+        sh 'docker compose up -d --build'
+    }
+}
     }
 
     post {
