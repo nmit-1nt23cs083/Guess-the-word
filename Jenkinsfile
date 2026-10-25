@@ -16,11 +16,18 @@ pipeline {
                 sh 'mvn clean install'
             }
         }
-        stage('Deploy') {
+     stage('Build Docker Image') {
+    steps {
+        sh 'docker build -t guess-the-word-j:1.0 .'
+    }
+}
+
+stage('Deploy') {
     steps {
         sh 'docker compose up -d --build'
     }
 }
+        
     }
 
     post {
