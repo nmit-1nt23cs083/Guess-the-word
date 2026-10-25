@@ -16,6 +16,12 @@ pipeline {
                 sh 'mvn clean install'
             }
         }
+        stage('Check Docker') {
+    steps {
+        sh 'docker --version'
+        sh 'docker compose version'
+    }
+}
      stage('Build Docker Image') {
     steps {
         sh 'docker build -t guess-the-word-j:1.0 .'
